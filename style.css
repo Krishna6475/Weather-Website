@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-display {
+    margin-top: 20px;
+}
+
+.weather-display h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.weather-display p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.error-display {
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
